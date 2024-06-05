@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  background-color: #eee;
+  height: 3300px;
+  overflow-x: hidden;
+  line-height: 1.2;
+}
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+header {
+  background-color: #eee;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  padding: 0 320px;
+  height: 80px;
+  width: 100%;
+}
+
+.navLeft {
+  display: flex;
+  height: 40px;
+  align-items: center;
+}
+
+.navRight {
+  display: flex;
+  height: 40px;
+  align-items: center;
+}
+
+.logo a {
+  color: #005386;
+  font-size: 24px;
+  text-decoration: none;
+  margin-right: 70px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  height: 40px;
+  margin-top: 13px;
+}
+
+.nav-links a {
+  color: #222;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.nav-links a:hover {
+  color: #009ee5;
+}
+
+/* 컨테이너 */
+
+.container {
+  width: 100%;
+  height: calc(100vh - 80px);
+  background-color: #000;
+  position: relative;
+}
+
+.media {
+  height: calc(100vh - 80px);
+}
+
+/* .slickBox {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+} */
+
+.slick {
+  width: 50%;
+  position: fixed !important;
+  left: 50%;
+  bottom: 50px;
+  transform: translateX(-50%);
+  z-index: 10000;
+  height: 50px;
+  display: flex !important;
+  align-items: center;
+}
+
+.test {
+  text-align: center;
+  color: #fff;
+  transition: color 0.3s;
+  z-index: 9999;
+}
+
+.test:hover {
+  color: #009ee5;
+  font-weight: bold;
+}
+
+.hovered {
+  color: #009ee5;
+  font-weight: bold;
+}
+
+/*이전,다음*/
+.slick-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 5;
+  color: #fff;
+  background: none;
+  border: 0;
+}
+
+.slick-prev,
+.slick-next {
+  width: 40px;
+  height: 40px;
+  z-index: 1;
+}
+
+.slick-prev {
+  position: absolute;
+  left: -10px;
+  font-family: "fontawesome";
+  cursor: pointer;
+}
+
+.slick-prev::before {
+  content: "\f104";
+}
+
+.slick-next {
+  position: absolute;
+  font-family: "fontawesome";
+  cursor: pointer;
+  right: -10px;
+}
+
+.slick-next::before {
+  content: "\f054";
+}
+.slick-dots {
+  display: flex !important;
+  gap: 15px;
+  transform: translateX(-50%);
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+}
+.slick-active::marker {
+  color: white !important;
+}
+li::marker {
+  color: grey;
+  cursor: pointer !important;
+}
+
+li button {
+  display: none !important;
+}
+
+.main-content {
+  margin-left: 250px; /* Same as the width of the sidenav */
+  flex-grow: 1;
+  overflow-y: scroll;
+  height: 100%;
+  position: relative;
+}
+
+.alpha {
+  position: absolute;
+  z-index: 999;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 8%);
+  height: 100%;
+}
+
+.test1 {
+  position: absolute;
+  z-index: 998;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 8%);
+  opacity: 0;
+}
+
+.Layer {
+  width: 100%;
+  height: calc(100vh - 70px);
+  position: absolute;
+  top: 50% !important;
+  left: 50%;
+  transform: translate(-50%, 8%);
+}
